@@ -1,0 +1,32 @@
+<div>
+
+  <div>
+    <div>
+      <table>
+          <thead>
+              <tr>
+                  <th>Code</th>
+                  <th>Country</th>
+                  <th>Domains</th>
+                  <th>Name</th>
+                  <th>State</th>
+                  <th>WebPage</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let item of dataSource">
+                  <th>{{ item.alpha_two_code }}</th>
+                  <td>{{ item.country}}</td>
+                  <td>{{ item.domains}}</td>
+                  <th>{{ item.name}}</th>
+                  <td>{{ item["state-province"]}}</td>
+                  <td><a href="item.web_pages">{{ item.web_pages}}</a></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  </div>
+
+</div>
+  
+<router-outlet></router-outlet>
